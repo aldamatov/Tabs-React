@@ -1,0 +1,115 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+[data-tab-content] {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+.active-content {
+  display: block;
+}
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: #f1f5f8;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  margin-top: 40px;
+}
+.container {
+  display: flex;
+  margin: 30px 0;
+}
+.img-section {
+  flex: 40%;
+  margin: 30px;
+}
+.img-section img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.tabs {
+  background-color: rgb(45, 120, 218);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-around;
+  color: white;
+}
+.tabs-section {
+  margin: 30px 40px 0 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  height: fit-content;
+}
+
+.tab.active {
+  background-color: rgb(117, 42, 187);
+}
+
+.tab:hover {
+  background-color: rgb(190, 223, 224);
+  border-radius: 10px;
+  color: black;
+}
+
+.tab-content {
+  width: 40vw;
+  text-align: left;
+  padding: 20px;
+}
+
+.vision-ul {
+  list-style: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs-section {
+    order: 1;
+    margin: 30px 30px 10px 30px;
+    height: 50%;
+    text-align: center;
+  }
+  .img-section {
+    order: 2;
+    margin: 10px 30px 30px 30px;
+  }
+  .tab-content {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+  }
+}
